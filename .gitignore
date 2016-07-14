@@ -1,10 +1,10 @@
-﻿src/HostFileEditor/bin/
-src/HostFileEditor/obj/
-src/HostFileEditor/hostfileconfig.json
+﻿# HostFileEditor - .gitignore
+
+HostFileEditor/bin/
+HostFileEditor/obj/
+HostFileEditor/hostfileconfig.json
+
 **/.vs/
 **/.vscode/
 **/*.vspscc
 **/*.suo
-/HostFileEditor/bin/Debug
-/HostFileEditor/App.config
-/HostFileEditor/HostFileConfig.json
