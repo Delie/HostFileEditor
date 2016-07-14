@@ -1,0 +1,21 @@
+﻿<Window x:Class="HostFileEditor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HostFileEditor"
+        mc:Ignorable="d"
+        Title="Host File Editor" Height="566" Width="572" MinWidth="450" MinHeight="350" Icon="Images/pencil.ico">
+	<Grid Margin="0,0,-23,0">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="100*"/>
+		</Grid.RowDefinitions>
+		<TextBox x:Name="txtHostsFile" Margin="10,38,37,112" TextWrapping="Wrap" Background="White" AcceptsReturn="True" AcceptsTab="True" VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Auto"/>
+		<Label x:Name="lblTitle" Content="Hosts File" HorizontalAlignment="Left" Margin="10,3,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14.667"/>
+		<Label x:Name="lblStatus" Content="Status: Idle" Background="#FFEEEEEE" Foreground="Black" Margin="2,0,21,-1" Height="29" VerticalAlignment="Bottom"/>
+		<Button x:Name="btnHostLoad" Content="Load Local" Margin="10,0,0,79" Height="28" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="110" Click="btnHostLoad_Click"/>
+		<Button x:Name="btnHostSave" Content="Save Local" Margin="125,0,0,79" Height="28" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="110" Click="btnHostSave_Click"/>
+		<Button x:Name="btnHostLoadCloud" Content="Load From Cloud" Margin="10,0,0,46" Height="28" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="110" Click="btnHostLoadCloud_Click" />
+		<Button x:Name="btnHostSaveCloud" Content="Save to Cloud" Margin="125,0,0,46" Height="28" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="110" RenderTransformOrigin="2.318,-1.821" Click="btnHostSaveCloud_Click"/>
+	</Grid>
+</Window>
